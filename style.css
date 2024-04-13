@@ -1,0 +1,772 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    display: flex;
+    height: 70px;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    top: 0;
+    position: sticky;
+    z-index: 999;
+    background-color: white;
+    /* border: 1px solid #000; */
+}
+
+.left {
+    width: 135px;
+    display: flex;
+    margin-left: 2%;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+}
+
+.left .menu {
+    width: 20px;
+}
+
+.left .logo {
+    width: 110px;
+    padding-left: 6%;
+}
+
+.input-search {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.middle {
+    width: 30%;
+    border: 1px solid #000;
+    border-radius: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.input-search>input {
+    width: 100%;
+    border-radius: 50px;
+    border: none;
+    outline: none;
+    padding-top: 5px;
+    padding-bottom: 5px;
+
+}
+
+.input-search {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.voice-search {
+    width: 17px;
+    margin-left: -17%;
+
+}
+
+.right {
+    width: 12%;
+    margin-right: 35px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+}
+
+.right>img {
+    width: 20px;
+}
+
+.profile>img {
+    width: 25px;
+    border-radius: 50px;
+}
+
+/* --------------------sidebar-------- */
+.sidebar {
+    width: 18%;
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    position: sticky;
+    top: 70px;
+}
+
+.sidebar hr {
+    width: 52%;
+}
+
+.sidebar a {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    text-decoration-line: none;
+}
+
+.sidebar a img {
+    width: 18px;
+    margin-right: 10px;
+}
+
+.sidebar a p {
+    font-size: 13px;
+}
+
+/* -------------subscribed---------- */
+.sidebar>.subscription-list {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+}
+
+.subscription-list h4 {
+    padding-bottom: 20px;
+    padding-top: 10px;
+    margin-left: -17px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.subscription-list a {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    text-decoration-line: none;
+}
+
+.subscription-list a img {
+    width: 18px;
+    margin-right: 10px;
+    border-radius: 50px;
+    margin-left: -20px;
+
+}
+
+.subscription-list a p {
+    font-size: 13px;
+}
+
+.hiden {
+    width: 3%;
+}
+
+.hiden a p {
+    display: none;
+}
+
+.hiden h4 {
+    display: none;
+}
+
+
+/* ----------------banner------------- */
+.banner {
+    width: 79%;
+    margin-left: 18%;
+    margin-top: -38%;
+    position: fixed;
+    top: 90%;
+
+}
+
+.banner img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* ----------------------container--------- */
+.container {
+    width: 79%;
+    margin-left: 18%;
+    margin-top: -17.5%;
+    margin-bottom: 50px;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 40px;
+    column-gap: 20px;
+}
+
+.child1 img {
+    width: 341.7px;
+    height: 200px;
+    border-radius: 10px;
+}
+
+.para img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+    object-fit: cover;
+}
+
+.para h4 {
+    padding-left: 40px;
+    margin-top: -30px;
+}
+
+.para p {
+    padding-left: 40px;
+    padding-top: 3px;
+}
+
+/* -----------------------play video------------ */
+.sidebar-video {
+    width: 420px;
+    margin-left: 62%;
+    margin-top: -90%;
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 123px;
+}
+
+
+.play-video video {
+    width: 80%;
+    margin-top: 20%;
+    margin-left: -20%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.side-video-list a img {
+    width: 48%;
+    border-radius: 5px;
+    margin-top: -32%;
+}
+
+
+.video-info {
+    padding-left: 50%;
+    margin-top: -27%;
+}
+
+.video-info a {
+    color: black;
+    font-weight: bolder;
+    text-decoration-line: none;
+}
+
+.para-sidebar {
+    margin-top: 2%;
+    width: 100%;
+
+}
+
+.hashtag {
+    width: 50%;
+    margin-left: -20%;
+    font-weight: bold;
+}
+
+.hashtag a {
+    text-decoration-line: none;
+}
+
+.row h3 {
+    font-size: 20px;
+}
+
+.like-share {
+    width: 79%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 8px;
+}
+
+.channellogo-div {
+    display: flex;
+    justify-content: space-between;
+    width: 79%;
+    margin-top: 5px;
+}
+
+.logos img {
+    width: 30px;
+    border-radius: 50%;
+    /* border: 1px solid #000; */
+}
+
+.logos .paras {
+    padding-left: 45px;
+    margin-top: -21%;
+    font-size: 14px;
+    /* border: 1px solid #000; */
+}
+
+.channellogo-div button {
+    width: 15%;
+    background-color: black;
+    color: white;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.divs {
+    cursor: pointer;
+}
+
+
+
+.paragraph {
+    margin-left: -16%;
+    margin-top: 10px;
+    line-height: 20px;
+    font-size: 14px;
+}
+
+.inp {
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.inp input {
+    width: 103%;
+    margin-left: 10px;
+    border: none;
+    outline: none;
+    margin-top: 2%;
+    height: 20px;
+}
+
+.inp img {
+    width: 30px;
+    border-radius: 50%;
+    margin-left: 5%;
+    margin-top: 10px;
+}
+
+/* ---------------------------comment sec---------- */
+.comment-sec {
+    /* border: 1px solid #000; */
+    width: 77%;
+    margin-left: -17%;
+    margin-top: 15px;
+}
+
+.comment-sec h4 {
+    padding-left: 40px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.comment-sec span {
+    font-weight: 500;
+}
+
+.comment-sec p {
+    font-size: 14px;
+    padding-left: 41px;
+    margin-top: -30px;
+}
+
+.comment-sec img {
+    width: 30px;
+    border-radius: 50%;
+}
+
+.likebtns {
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 40px;
+    margin-bottom: 20px;
+}
+
+.likebtns img {
+    width: 20px;
+}
+
+/* ----------------play video media query-------------- */
+
+@media screen and (max-width: 320px) {
+    .row h3 {
+        font-size: 14px;
+        width: 93%;
+    }
+
+    .like-share p {
+        font-size: 12px;
+        width: 100%;
+    }
+
+    .divs{
+        gap: 4px;
+    }
+    .divs img {
+        width: 12px;
+    }
+
+    .divs span {
+        font-size: 12px;
+    }
+
+    .horizontal {
+        display: none;
+    }
+
+    .logos img {
+        width: 30px;
+        border-radius: 50%;
+    }
+
+    .logos .paras {
+        padding-left: 45px;
+        font-size: 13px;
+    }
+
+    .paras p {
+        margin-left: 30px;
+        margin-top: -2%;
+    }
+    .channellogo-div {
+        display: flex;
+        justify-content: space-between;
+        width: 79%;
+    }
+    .paragraph{
+        width: 100%;
+    }
+    .paragraph p{
+        font-size: 11px;
+        margin-left: 10%;
+    }
+    .hashtag a {
+        text-decoration-line: none;
+        font-size: 13px;
+    }
+    .head{
+        padding-left: 25%;
+    }
+    .inp img{
+        margin-left: 9%;
+    }
+    
+    .comment-sec h4{
+        font-size: 13px;
+        margin-left: 17%;
+    }
+    .comment-sec p{
+        margin-left: 17%;
+        font-size: 11px;
+    }
+    .comment-sec img{
+        margin-left: 7%;
+    }
+    
+    .likebtns {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 20px;
+        padding-left: 13%;
+        margin-top: 2%;
+    }
+    
+    .likebtns img {
+        width: 14px;
+    }
+    .likebtns span{
+
+        font-size: 10px;
+    }
+
+    .side-video-list a img{
+        padding-top: 60%;
+    }
+    .video-info a h4{
+        padding-top: 25%;
+    }
+    hr{
+        display: none ;
+    }
+    
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ---------------------------media query---------- */
+@media screen and (max-width: 320px) {
+    nav {
+        height: 61px;
+    }
+
+
+    .left {
+        width: auto;
+        margin-left: 5px;
+        padding-top: 5px;
+    }
+
+    .left .menu {
+        display: none;
+    }
+
+    .right {
+        margin-right: 30px;
+        display: flex;
+        gap: 5px;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 10px;
+    }
+
+    .right>img {
+        width: 20px;
+    }
+
+    .middle {
+        width: 30%;
+        border-radius: 20px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        border: none;
+    }
+
+    .input-search>input {
+        width: 100%;
+        border-radius: 50px;
+        background-color: rgba(135, 207, 235, 0.318);
+        border: none;
+        outline: none;
+        padding-top: 6px;
+        padding-bottom: 6px;
+    }
+
+    input::placeholder {
+        padding-left: 6px;
+    }
+
+    .sidebar a img {
+        display: none;
+    }
+
+    .right .h {
+        display: none;
+    }
+
+    .right .notification,
+    .right .more {
+        width: 20px;
+    }
+
+    .sidebar a p {
+        display: none;
+    }
+
+    .sidebar h4 {
+        display: none;
+    }
+
+    .banner {
+        width: 100%;
+        margin-left: 0%;
+        margin-top: -136.8%;
+        position: fixed;
+        top: 90%;
+
+    }
+
+    .banner img {
+        width: 100%;
+        height: 86px;
+        object-fit: cover;
+    }
+
+
+    .left .logo {
+        width: 80px;
+        padding-left: 0;
+    }
+
+    .middle {
+        width: 50%;
+        margin: 0 auto;
+    }
+
+    .voice-search {
+        margin-left: -25%;
+    }
+
+    .right {
+        width: auto;
+        margin-right: 10px;
+        padding-top: 5px;
+    }
+
+    .right>img {
+        width: 15px;
+    }
+
+    .profile>img {
+        width: 20px;
+    }
+
+    .sidebar {
+        width: 100%;
+        padding-left: 10px;
+    }
+
+    .sidebar hr {
+        width: 100%;
+    }
+
+    .sidebar a {
+        margin-bottom: 10px;
+    }
+
+    .sidebar a img {
+        width: 15px;
+    }
+
+    .subscription-list h4 {
+        margin-left: -15px;
+    }
+
+    .subscription-list a img {
+        margin-left: -15px;
+    }
+
+    .hiden,
+    .hiden a,
+    .hiden h4 {
+        display: none;
+    }
+
+
+    .container {
+        width: 100%;
+        margin: 0;
+        margin-top: -10%;
+    }
+
+    .child1 img {
+        height: auto;
+        width: 100%;
+    }
+
+    .sidebar-video {
+        width: 100%;
+        margin: 0;
+        margin-top: -80%;
+    }
+
+    .play-video video {
+        width: 100%;
+        margin: 0;
+    }
+
+    .side-video-list a img {
+        width: 100%;
+        margin-top: -20%;
+    }
+
+    .video-info {
+        padding-left: 0;
+        margin-top: -25%;
+    }
+
+    .hashtag {
+        width: 80%;
+        margin-left: 0;
+    }
+
+    .like-share {
+        width: 100%;
+        margin-top: 5px;
+    }
+
+    .channellogo-div {
+        width: 100%;
+        margin-top: 0;
+    }
+
+    .logos img {
+        width: 25px;
+    }
+
+    .logos .paras {
+        padding-left: 0;
+        margin-top: -20%;
+    }
+
+    .channellogo-div button {
+        width: 30%;
+    }
+
+    .paragraph {
+        margin-left: 0;
+    }
+
+    .inp {
+        width: 100%;
+    }
+
+    .inp input {
+        width: 90%;
+    }
+
+    .inp img {
+        width: 20px;
+    }
+
+    .comment-sec {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+    .comment-sec h4,
+    .comment-sec p {
+        padding-left: 10px;
+    }
+
+    .likebtns {
+        width: 60%;
+        margin-left: 10px;
+    }
+
+    .voice-search {
+        display: none;
+    }
+
+    .para img {
+        width: 30px;
+        height: 30px;
+        border-radius: 50px;
+        object-fit: cover;
+    }
+
+    .para h4 {
+        font-size: 14px;
+    }
+
+    .para p {
+        padding-left: 40px;
+        padding-top: 3px;
+        font-size: 13px;
+    }
+
+}
